@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+}
+
+.side-padding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.top-bottom-padding {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+img {
+    width: 100%;
+}
+
+.gbo-logo {
+    width: 200px;
+}
+
+header {
+    height: 90vh;
+}
+
+/* TOPNAV */
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav-link {
+    font-family: 'Exo', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    color: #707070;
+}
+
+/* INDEX */
+
+.index-header {
+    background-image: url("images/index/index-sunset-1.png");
+    background-size: cover;
+}
+
+.index-header-text {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.index-header-title {
+    grid-column: 3 / 10;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 5rem;
+    color: white;
+    text-shadow: 1px 1px 15px rgb(59, 59, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0;
+}
+
+.index-intro-text {
+    
+}
