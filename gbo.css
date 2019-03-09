@@ -104,6 +104,85 @@ img {
     color: #707070;
 }
 
+.topnav-mobile {
+    background-color: #EDEDED;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: none;
+}
+
+.topnav-mobile-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 7%;
+}
+
+.topnav-mobile-area {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.gbo-logo-mobile {
+    z-index: 8;
+}
+
+.topnav-mobile-x {
+    z-index: 7;
+    width: 30px;
+}
+
+.topnav-mobile-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav-mobile-link {
+    font-family: 'Exo', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: #707070;
+    padding: 9%;
+}
+
+.topnav-mobile-hamburger {
+    display: none;
+}
+
+.topnav-getintouch {
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5rem;
+    color: #707070;
+    padding-left: 9%;
+}
+
+.display-topnav-mobile {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .topnav {
+        flex-wrap: wrap;
+    }
+    .topnav-links {
+        display: none;
+    }
+    .topnav-mobile-hamburger {
+        display: block;
+        width: 30px;
+    }
+}
+
 /* FOOTER */
 
 footer {
