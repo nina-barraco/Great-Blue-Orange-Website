@@ -74,7 +74,7 @@ img {
 }
 
 .gbo-logo {
-    width: 200px;
+    width: 150px;
 }
 
 .top-line {
@@ -93,6 +93,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1.5rem;
 }
 
 .topnav-link {
@@ -112,23 +113,27 @@ img {
     top: 0;
     left: 0;
     z-index: 6;
-    display: none;
+    visibility: hidden;
+    transition: visibility 2s;
+    -webkit-transition: visibility 2s;
 }
+  
 
 .topnav-mobile-top {
+    grid-column: 2 / 16;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 7%;
+    padding-top: 1.5rem;
 }
 
 .topnav-mobile-area {
+    grid-column: 2 / 16;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
 }
 
 .gbo-logo-mobile {
@@ -152,7 +157,7 @@ img {
     font-size: 1.5rem;
     letter-spacing: .1rem;
     color: #707070;
-    padding: 9%;
+    padding-bottom: 10%
 }
 
 .topnav-mobile-hamburger {
@@ -163,12 +168,29 @@ img {
     font-family: 'Exo', sans-serif;
     font-size: 1.5rem;
     color: #707070;
-    padding-left: 9%;
 }
 
 .display-topnav-mobile {
-    display: block;
+    visibility: visible;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    /* -webkit-animation-duration: 2s;
+    -webkit-animation-name: slidein; */
+    /* transition: background-color 2s;
+    -webkit-transition: background-color 2s; */
 }
+
+/* @keyframes slidein {
+    from {
+      margin-top: 0%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-bottom: 100%;
+      width: 100%;
+    }
+  } */
 
 @media (max-width: 600px) {
     .topnav {
