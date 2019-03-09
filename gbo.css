@@ -6,11 +6,6 @@ body {
     opacity: 1;
     transition: 0.7s opacity;
 }
-
-/* body {
-    opacity: 1;
-    transition: 0.7s opacity;
-} */
   
 body.fade {
     opacity: 0;
@@ -95,6 +90,15 @@ img {
 
 .align-items-center {
     align-items: center
+}
+
+.scroll-opacity {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-animation {
+    opacity: 1;
 }
 
 /* TOPNAV */
@@ -246,6 +250,11 @@ footer {
     color: #707070;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.footer-logo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
