@@ -1,6 +1,8 @@
 function clickNav(x) {
     var display = document.getElementById("topnav-mobile-js");
     display.classList.toggle("display-topnav-mobile");
+    var displayText = document.getElementById("topnav-mobile-area-js");
+    displayText.classList.toggle("display-topnav-mobile-area");
   }
 
 function fadeIn(x) {

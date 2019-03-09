@@ -121,6 +121,18 @@ img {
     color: #707070;
 }
 
+.topnav-link:hover {
+    color: #E04E00;
+}
+
+.topnav-link {
+    font-family: 'Exo', sans-serif;
+    text-decoration: none;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    color: #707070;
+}
+
 .topnav-mobile {
     background-color: #EDEDED;
     height: 100vh;
@@ -133,7 +145,6 @@ img {
     grid-template-columns: repeat(16, 1fr);
     visibility: hidden;
 }
-  
 
 .topnav-mobile-top {
     grid-column: 2 / 16;
@@ -157,7 +168,6 @@ img {
 }
 
 .topnav-mobile-x {
-    z-index: 7;
     width: 30px;
 }
 
@@ -189,12 +199,35 @@ img {
 .display-topnav-mobile {
     visibility: visible;
     animation-name: slidein;
-    animation-duration: 2s;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
     -webkit-animation-name: slidein;
     -webkit-animation-duration: .25s;
 }
 
 @keyframes slidein {
+    from {
+      margin-top: 0%;
+      height: 10%;
+    }
+  
+    to {
+      margin-bottom: 100%;
+      height: 100%;
+    }
+  }
+
+.display-topnav-mobile-area {
+    visibility: visible;
+    animation-name: slideintext;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: slideintext;
+    -webkit-animation-duration: .25s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slideintext {
     from {
       margin-top: 0%;
       height: 10%;
