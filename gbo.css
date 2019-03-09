@@ -113,9 +113,9 @@ img {
     top: 0;
     left: 0;
     z-index: 6;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
     visibility: hidden;
-    transition: visibility 2s;
-    -webkit-transition: visibility 2s;
 }
   
 
@@ -172,25 +172,23 @@ img {
 
 .display-topnav-mobile {
     visibility: visible;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    /* -webkit-animation-duration: 2s;
-    -webkit-animation-name: slidein; */
-    /* transition: background-color 2s;
-    -webkit-transition: background-color 2s; */
+    animation-name: slidein;
+    animation-duration: 2s;
+    -webkit-animation-name: slidein;
+    -webkit-animation-duration: .25s;
 }
 
-/* @keyframes slidein {
+@keyframes slidein {
     from {
       margin-top: 0%;
-      width: 100%; 
+      height: 10%;
     }
   
     to {
       margin-bottom: 100%;
-      width: 100%;
+      height: 100%;
     }
-  } */
+  }
 
 @media (max-width: 600px) {
     .topnav {
