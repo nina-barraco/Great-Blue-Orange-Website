@@ -10,42 +10,45 @@
     <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
 </head>
 <body>
+    <script>
+        document.body.classList.add('fade');
+    </script>
 
-        <nav class="topnav">
-            <div class="gbo-logo">
-                <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo">
-            </div>
-            <div class="topnav-links">
-                <a href="#" class="topnav-link">About  |</a>
-                <a href="#" class="topnav-link">  Approach</a>
-            </div>
-            <div class="topnav-mobile-hamburger" onclick="clickNav(this)">
-                <img src="images/icons/Hamburger.svg" alt="Menu Hamburger Icon">
-            </div>
-            <div class="topnav-mobile" id="topnav-mobile-js">
-                <div class="topnav-mobile-top">
-                    <div class="gbo-logo-mobile">
-                        <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo">
-                    </div>
-                    <div class="topnav-mobile-x" onclick="clickNav(this)">
-                        <img src="images/icons/X.svg" alt="Menu Hamburger Icon">
-                    </div>
+    <nav class="topnav">
+        <div class="gbo-logo">
+            <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo">
+        </div>
+        <div class="topnav-links">
+            <a href="#" class="topnav-link">About  |</a>
+            <a href="#" class="topnav-link">  Approach</a>
+        </div>
+        <div class="topnav-mobile-hamburger" onclick="clickNav(this)">
+            <img src="images/icons/Hamburger.svg" alt="Menu Hamburger Icon">
+        </div>
+        <div class="topnav-mobile" id="topnav-mobile-js">
+            <div class="topnav-mobile-top">
+                <div class="gbo-logo-mobile">
+                    <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo">
                 </div>
-                <div class="topnav-mobile-area">
-                    <div class="topnav-mobile-links">
-                        <a href="#" class="topnav-mobile-link">About</a>
-                        <a href="#" class="topnav-mobile-link">Approach</a>
-                    </div>
-                    <div class="topnav-mobile-contact">
-                        <p class="topnav-getintouch">
-                            <b>Get in Touch</b>
-                            <br>
-                            leah@greatblueorange.com
-                        </p>
-                    </div>
+                <div class="topnav-mobile-x" onclick="clickNav(this)">
+                    <img src="images/icons/X.svg" alt="Menu Hamburger Icon">
                 </div>
             </div>
-        </nav>
+            <div class="topnav-mobile-area">
+                <div class="topnav-mobile-links">
+                    <a href="#" class="topnav-mobile-link">About</a>
+                    <a href="#" class="topnav-mobile-link">Approach</a>
+                </div>
+                <div class="topnav-mobile-contact">
+                    <p class="topnav-getintouch">
+                        <b>Get in Touch</b>
+                        <br>
+                        leah@greatblueorange.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <header class="about-header inherit-grid one-17">
         <div class="about-header-img"></div>
@@ -120,6 +123,12 @@
             </div>
         </div>        
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.classList.remove('fade');
+        });
+    </script>     
 
 <script src="gbo.js"></script>
 </body>

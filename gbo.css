@@ -3,6 +3,18 @@ body {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-gap: 1.5rem;
+    opacity: 1;
+    transition: 0.7s opacity;
+}
+
+/* body {
+    opacity: 1;
+    transition: 0.7s opacity;
+} */
+  
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 
 h1 {
