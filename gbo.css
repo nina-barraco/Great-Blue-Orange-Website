@@ -122,10 +122,10 @@ img {
 }
 
 .topnav-link:hover {
-    color: #E04E00;
+    color: #0099AB;
 }
 
-.topnav-link {
+.topnav-line {
     font-family: 'Exo', sans-serif;
     text-decoration: none;
     font-size: .9rem;
@@ -148,6 +148,7 @@ img {
 
 .topnav-mobile-top {
     grid-column: 2 / 16;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,6 +162,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    opacity: 0;
+    transition: opacity .5s ease-in;
 }
 
 .gbo-logo-mobile {
@@ -203,6 +206,7 @@ img {
     animation-fill-mode: forwards;
     -webkit-animation-name: slidein;
     -webkit-animation-duration: .25s;
+    -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes slidein {
@@ -221,10 +225,11 @@ img {
     visibility: visible;
     animation-name: slideintext;
     animation-duration: .25s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: inherit;
     -webkit-animation-name: slideintext;
     -webkit-animation-duration: .25s;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: inherit;
+    opacity: 1;
 }
 
 @keyframes slideintext {
@@ -251,6 +256,11 @@ img {
         width: 30px;
     }
 }
+
+/* the children elements are not inheriting the animation. 
+the animation is snapping because it is not retaining the last style of the keyframe.
+the height of the top element is being elongated. */
+/* i find it strange that the .display-topnav-mobile-area can inherit the animation-fill-mode properties, but it doesn't appear to inherit anything else. */
 
 /* FOOTER */
 
