@@ -369,11 +369,15 @@ footer {
     color: white;
     text-align: center;
     text-shadow: 1px 1px 15px rgb(59, 59, 70);
+    position: relative;
+    bottom: 10%;
 }
 
 .index-services-background {
     background-color: white;
     box-shadow: 0px 3px 10px #707070;
+    position: relative;
+    bottom: 15%;;
 }
 
 .index-services-subtitle {
@@ -401,18 +405,37 @@ footer {
     padding: 1.5rem;
 }
 
+.index-service-title {
+    padding-top: 1rem;
+}
+
 .index-calltoaction {
     text-align: center;
+}
+
+.index-gettoknow-group {
+    display: inline-block;
 }
 
 .index-gettoknow {
     font-family: 'Exo', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: .05rem;
     color: #0099AB;
     margin: 0;
+}
+
+.index-gettoknow-line {
+    border-bottom: 3px solid #0099AB;
+    width: 0%;
+    transition: width 1.5s ease;
+}
+
+.index-gettoknow-line-grow {
+    width: 100%; 
 }
 
 @media (max-width: 768px) {
@@ -422,6 +445,17 @@ footer {
         padding-left: 0;
         padding-top: 1.5rem;
     }
+    .index-masters-heading {
+        position: relative;
+        bottom: 0%;
+    }
+    .index-services-background {
+        position: relative;
+        bottom: 0%;
+    }
+    .index-services-background {
+        box-shadow: none;
+    }
     .index-three-services {
         flex-wrap: wrap;
         padding: 0;
@@ -429,6 +463,11 @@ footer {
     .index-service {
         width: 100%;
         padding: 0;
+        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+    }
+    .index-calltoaction {
+        padding-top: 10%;
     }
 }
 
@@ -557,5 +596,50 @@ footer {
     .about-story-text {
         grid-column: 2 / 16;
         padding-top: 5%;
+    }
+}
+
+/* PARTNERS AND CLIENTS */
+
+.partners-header-textbox {
+    grid-column: 3 / 15;
+    background-color: #EDEDED;
+    z-index: 2;
+    margin-top: 5%;
+}
+
+.partners-header-title {
+    color: #0099AB;
+    border-left: 6px solid #0099AB;
+    margin: 8%;
+    padding-left: 5%;
+}
+
+.partners-header-img {
+    grid-column: 2 / 16;
+    background-image: url("images/partnersclients/clients-bench.png");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    bottom: 30vh;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .partners-header-textbox {
+        grid-column: 2 / 16;
+    }
+    .partners-header-title {
+        border-left: none;
+        border-top: 6px solid #0099AB;
+        padding-left: 0%;
+        padding-top: 7%;
+        margin: 10%;
+        font-size: 1.9rem;
+    } 
+    .partners-header-img {
+        grid-column: 1 / 17;
+        bottom: 30vh;
     }
 }

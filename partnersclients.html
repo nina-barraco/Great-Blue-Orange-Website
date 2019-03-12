@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Great Blue Orange Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="gbo.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
+</head>
+
+<body onscroll="fadeIn(this)">
+    <script>
+        document.body.classList.add('fade');
+    </script>
+
+    <nav class="topnav">
+        <a href="index.html" class="gbo-logo">
+            <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo">
+        </a>
+        <div class="topnav-links">
+            <a href="about.html" class="topnav-link">About</a>
+            <a href="#" class="topnav-line"> | </a>
+            <a href="partnersclients.html" class="topnav-link">Partners and Clients</a>
+        </div>
+        <div class="topnav-mobile-hamburger" onclick="clickNav(this)">
+            <img src="images/icons/Hamburger.svg" alt="Menu Hamburger Icon">
+        </div>
+        <div class="topnav-mobile" id="topnav-mobile-js">
+            <div class="topnav-mobile-top">
+                <div class="gbo-logo-mobile">
+                    <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo">
+                </div>
+                <div class="topnav-mobile-x" onclick="clickNav(this)">
+                    <img src="images/icons/X.svg" alt="Menu Hamburger Icon">
+                </div>
+            </div>
+            <div class="topnav-mobile-area" id="topnav-mobile-area-js">
+                <div class="topnav-mobile-links">
+                    <a href="about.html" class="topnav-mobile-link">About</a>
+                    <a href="partnersclients.html" class="topnav-mobile-link">Partners and Clients</a>
+                </div>
+                <div class="topnav-mobile-contact">
+                    <p class="topnav-getintouch">
+                        <b>Get in Touch</b>
+                        <br>
+                        leah@greatblueorange.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="partners-header inherit-grid one-17">
+        <div class="partners-header-textbox">
+            <h1 class="partners-header-title">We believe that a human-centered, holistic approach is the most effective way to drive change.</h1>
+        </div>
+        <div class="partners-header-img"></div>
+    </header>
+
+    <footer class="one-17 inherit-grid">
+        <div class="two-16 footer-info">
+            <div class="footer-logo">
+                <img src="images/Blue-Orange-Logo-Primary_deletedbackground.png" class="gbo-logo" id="gbo-logo-footer">
+            </div>
+            <div class="footer-text">
+                <a href="#" class="footer-link">leah@greatblueorange.com</a>
+                <a class="footer-line" id="footer-line-1"> | </a>
+                <div class="footer-phone-facebook">
+                    <a href="#" class="footer-link">517.944.0376</a>
+                    <a class="footer-line"> | </a>
+                    <a href="#" class="footer-link">Facebook</a>
+                </div>
+            </div>
+        </div>        
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            document.body.classList.remove('fade');
+        });
+    </script>     
+    
+    <script src="gbo.js"></script>
+</body>
+</html>

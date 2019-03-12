@@ -18,3 +18,10 @@ function fadeIn(x) {
   };
   checkPosition();
 }
+
+// INDEX
+
+function growLine(x) {
+  var line = document.getElementsByClassName("index-gettoknow-line");
+  line[0].classList.toggle("index-gettoknow-line-grow");
+}
