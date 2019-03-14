@@ -87,7 +87,7 @@ img {
 
 .scroll-opacity {
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity .75s ease-in;
 }
 
 .fade-animation {
@@ -537,6 +537,12 @@ footer {
     grid-column: 9 / 16;
 }
 
+.about-values-heading {
+    display: inline-block;
+    border-top: 6px solid #E04E00;
+    padding-top: 4%;
+}
+
 .about-sunset-story {
     grid-column: 3 / 8;
 }
@@ -595,6 +601,9 @@ footer {
         grid-column: 2 / 16;
         padding-top: 5%;
     }
+    .about-values-heading {
+        display: block;
+    }
     .about-sunset-story {
         grid-column: 2 / 16;
     }   
@@ -611,11 +620,12 @@ footer {
     background-size: cover;
     background-position: center;
     height: auto;
-    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 .partners-header-textbox {
     grid-column: 3 / 15;
+    margin-top: -10%;
 }
 
 .partners-header-heading {
@@ -625,24 +635,13 @@ footer {
 }
 
 .partners-header-title {
-    grid-column: 3 / 15;
     color: #0099AB;
     border-left: 6px solid #0099AB;
     padding-left: 8%;
 }
 
-/* .partners-header-img {
-    grid-column: 2 / 16;
-    background-image: url("images/partnersclients/clients-bench.png");
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    z-index: 1;
-} */
-
 .partners-main {
-    position: relative;
-    top: 75px;
+    margin-top: -1.5rem;
 }
 
 .partners-consulting-header {
